@@ -1,9 +1,12 @@
 class User < ApplicationRecord
 
-  mount_uploader :image, ImageUploader
+  mount_uploader :image, ImageUploader #userクラスにアップローダーを実装する
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :omniauthable
+
+          
+         
 
     def self.find_for_oauth(auth)
            user = User.where(uid: auth.uid, provider: auth.provider).first

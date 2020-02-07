@@ -4,9 +4,9 @@ class Users::SessionsController < Devise::SessionsController
     
     protected
     
-     def after_sign_in_path_for(resource)
-       my_page_path
-     end
+     #def after_sign_in_path_for(resource)
+       #my_page_path
+     #end
     
   # before_action :configure_sign_in_params, only: [:create]
 
@@ -31,4 +31,5 @@ class Users::SessionsController < Devise::SessionsController
   # def configure_sign_in_params
   #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
   # end
+
 end
