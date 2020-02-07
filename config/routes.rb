@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+    
+  devise_for :users
+  get 'comments/index'
   root 'static_pages#home' # => root_path
   get  '/help',    to: 'static_pages#help'
   get  '/about',   to: 'static_pages#about'
