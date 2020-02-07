@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
     
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   get 'comments/index'
   root 'static_pages#home' # => root_path
   get  '/help',    to: 'static_pages#help'
