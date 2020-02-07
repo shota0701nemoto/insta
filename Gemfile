@@ -13,6 +13,8 @@ gem 'jbuilder',     '2.7.0'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
